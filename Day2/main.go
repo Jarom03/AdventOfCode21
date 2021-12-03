@@ -15,7 +15,7 @@ type movement struct {
 }
 
 func readTxtFile(input string) []movement {
-	file, err := os.Open("input.txt")
+	file, err := os.Open(input)
 	if err != nil {
 		log.Fatal(err)
 	}

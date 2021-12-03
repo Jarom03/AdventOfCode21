@@ -10,7 +10,7 @@ import (
 )
 
 func readTxtFile(input string) []string {
-	file, err := os.Open("input.txt")
+	file, err := os.Open(input)
 	if err != nil {
 		log.Fatal(err)
 	}
